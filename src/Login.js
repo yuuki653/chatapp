@@ -17,7 +17,6 @@ const Login = () => {
     signInWithEmailAndPassword(auth, email, password)
       .then(() => {
         navigate("/");
-        // <Navigate replace to="/" />;
       })
       .catch((err) => {
         console.log(err);
@@ -25,7 +24,6 @@ const Login = () => {
   };
 
   if (user) {
-    // return navigate("/");
     return <Navigate replace to="/" />;
   }
   return (
